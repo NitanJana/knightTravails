@@ -6,7 +6,7 @@ const endPosition = [6, 3];
 const path = KnightMoves.knightMoves(startPosition, endPosition);
 
 if (path) {
-  console.log(`you reached position [${endPosition}] through following path: `);
+  console.log(`you reached position [${endPosition}] in ${path.length - 1} moves.\nHere is your path: `);
 
   for (let i = 0; i < path.length - 1; i += 1) {
     process.stdout.write(`${path[i]} -> `);
